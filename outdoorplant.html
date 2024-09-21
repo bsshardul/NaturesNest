@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor Plant Shop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .product-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .product-details {
+        padding: 15px;
+      }
+
+      .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .product-price {
+        color: #007bff;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .product-description {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .buy-button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+      }
+
+      .buy-button:hover {
+        background-color: #0056b3;
+      }
+
+      .thank-you-message {
+        display: none;
+        font-size: 16px;
+        color: green;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Outdoor Plants Collection</h1>
+      <div class="product-grid">
+        <!-- Outdoor Plant 1 -->
+        <div class="product-card">
+          <img src="images/prajakta.jpeg" alt="Outdoor Plant 1" />
+          <div class="product-details">
+            <h3 class="product-title">Prajakta</h3>
+            <p class="product-price">Rs.65</p>
+            <p class="product-description">
+              The Prajakta is a versatile and fragrant flowering plant, often
+              admired for its beautiful blossoms.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 2 -->
+        <div class="product-card">
+          <img src="images/rose.jpeg" alt="Outdoor Plant 2" />
+          <div class="product-details">
+            <h3 class="product-title">Rose</h3>
+            <p class="product-price">Rs.80</p>
+            <p class="product-description">
+              Roses are classic flowers known for their stunning beauty and
+              delightful fragrance.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 3 -->
+        <div class="product-card">
+          <img src="images/jasmine.jpeg" alt="Outdoor Plant 3" />
+          <div class="product-details">
+            <h3 class="product-title">Jasmine Plant</h3>
+            <p class="product-price">Rs.70</p>
+            <p class="product-description">
+              Jasmine plants produce small, highly fragrant white or yellow
+              flowers.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 4 -->
+        <div class="product-card">
+          <img src="images/mango.jpeg" alt="Outdoor Plant 4" />
+          <div class="product-details">
+            <h3 class="product-title">Mango Tree</h3>
+            <p class="product-price">Rs.100</p>
+            <p class="product-description">
+              Mango trees bear large, juicy fruits with a sweet and tangy
+              flavor. The tree's lush foliage and delicious fruit make it a
+              favorite in tropical and subtropical climates.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 5 -->
+        <div class="product-card">
+          <img src="images/krishnakamal.jpeg" alt="Outdoor Plant 5" />
+          <div class="product-details">
+            <h3 class="product-title">Krishna Kamal</h3>
+            <p class="product-price">Rs.142</p>
+            <p class="product-description">
+              Krishna Kamal, or Passiflora, is a striking vine with intricate
+              flowers that can be purple, white, or pink. It’s known for its
+              unique appearance and is often grown for its ornamental value.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 6 -->
+        <div class="product-card">
+          <img src="images/curryleaves.jpeg" alt="Outdoor Plant 6" />
+          <div class="product-details">
+            <h3 class="product-title">Curry Leaves</h3>
+            <p class="product-price">Rs.35</p>
+            <p class="product-description">
+              Curry leaf plants are aromatic shrubs used in cooking for their
+              distinctive flavor. The leaves are an essential ingredient in
+              South Asian cuisine, especially in curries and stews.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 7 -->
+        <div class="product-card">
+          <img src="images/lemon.jpeg" alt="Outdoor Plant 7" />
+          <div class="product-details">
+            <h3 class="product-title">Lemon Tree</h3>
+            <p class="product-price">Rs.65</p>
+            <p class="product-description">
+              Lemon trees are valued for their tart and tangy fruits. They are
+              evergreen and provide fresh lemons throughout the year, adding a
+              zesty flavor to dishes and beverages.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Outdoor Plant 8 -->
+        <div class="product-card">
+          <img src="images/hibiscus.jpeg" alt="Outdoor Plant 8" />
+          <div class="product-details">
+            <h3 class="product-title">Hibiscus Tree</h3>
+            <p class="product-price">Rs.54</p>
+            <p class="product-description">
+              Hibiscus plants are known for their large, colorful flowers that
+              come in shades of red, pink, yellow, and orange. They are often
+              used in teas and as ornamental plants.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you-message">Thank you for your purchase!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function buyNow(button) {
+        // Hide the Buy Now button
+        button.style.display = "none";
+        // Show the thank you message
+        let thankYouMessage = button.nextElementSibling;
+        thankYouMessage.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

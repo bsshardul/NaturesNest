@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Nest</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5%;
+        background-color: rgba(110, 54, 54, 0.436);
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        position: relative;
+      }
+
+      nav a::after {
+        content: "▼";
+        font-size: 0.7rem;
+        position: absolute;
+        top: 0;
+        right: -12px;
+      }
+
+      nav a.cta {
+        background-color: #fff;
+        color: #111;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      nav a.cta:hover {
+        background-color: #ddd;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 5%;
+        background-image: url("https://i.pinimg.com/564x/78/c0/6c/78c06ce8cfff352d63f881ca98bc044a.jpg");
+
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+      }
+
+      .hero-content {
+        max-width: 45%;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .hero-image {
+        max-width: 45%;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .hero a {
+        color: #fff;
+      }
+
+      .content-section {
+        padding: 50px 5%;
+        background-color: #fff;
+        color: #111;
+      }
+
+      .content-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .content-section p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .content-section img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #222;
+      }
+
+      footer p {
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header className="bg-light py-4">
+      <div className="container-fluid">
+        <div className="row align-items-center justify-content-center">
+          <div className="col-auto">
+            <img src="/images/pictlogo.jpg" alt="Logo" height="100" />
+          </div>
+          <div className="col text-center">
+            <h1>Nature's Nest</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav className="text-center">
+      <a href="resources.html">Resources</a>
+      <a href="login.html">Log In</a>
+      <a href="getstarted.html" className="cta">Get Started</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Crafted for Growth: Your Premier Plant Nursery E-commerce Destination
+        </h1>
+
+        <a href="#" class="cta">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/homepage2.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section class="content-section">
+      <p>
+        Choose from our curated selection of nature-inspired website templates,
+        botanical fonts, and earthy color palettes.
+      </p>
+
+      <p>
+        Sell your plants and gardening supplies effortlessly. Set up an online
+        store, schedule plant consultations, or offer gardening workshops—all
+        through a platform designed with your nursery in mind.
+      </p>
+
+      <p>
+        Promote your nursery and engage with your customers using our integrated
+        marketing tools, designed to nurture your business's growth
+      </p>
+
+      <img src="images/homepage1.jpeg" alt="" />
+    </section>
+
+    
+    <footer className="bg-dark py-4 text-white text-center"></footer>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4">
+            <h5>Contact Us</h5>
+            <p>
+              Address:
+              Survey No. 27, Near Trimurti Chowk
+              Dhankwadi, Pune - 411043
+            </p>
+            <p>
+              Email: registrar@pict.edu
+            </p>
+            <p>
+              Phone: +91 20 24371101
+              Fax: +91 20 24364741
+            </p>
+          </div>
+          <div className="col-lg-4">
+            {/* Empty column for spacing */}
+          </div>
+          <div className="col-lg-4">
+            <h5>Website developed by</h5>
+            <p>
+              Shardul Bramhanathkar
+            </p>
+            <p>Sakshi Sonone</p>
+            
+            <p>
+              Anand Maladkar
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

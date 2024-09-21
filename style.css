@@ -1,0 +1,88 @@
+/* General styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("images/loginimage1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Main container styles */
+.main {
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)),
+                url('/Images/loginimage1.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: white; /* Ensures text color is white for contrast */
+}
+
+/* Headings styles */
+h1 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #eee; /* Light color for better readability on dark background */
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Link styles */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

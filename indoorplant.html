@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Shop</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .product-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .product-details {
+        padding: 15px;
+      }
+
+      .product-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .product-price {
+        color: #007bff;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .product-description {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      .buy-button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+      }
+
+      .buy-button:hover {
+        background-color: #0056b3;
+      }
+
+      .thank-you {
+        display: none;
+        color: green;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Plants Collection</h1>
+      <div class="product-grid">
+        <!-- Plant 1 -->
+        <div class="product-card">
+          <img src="images/aloevera.jpeg" alt="Aloe Vera" />
+          <div class="product-details">
+            <h3 class="product-title">Aloe Vera</h3>
+            <p class="product-price">Rs.85</p>
+            <p class="product-description">
+              Aloe Vera is a hardy succulent with thick, fleshy leaves. It's
+              well-known for its soothing gel, which is used for skin care and
+              has various health benefits.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 2 -->
+        <div class="product-card">
+          <img src="images/bamboplant.jpeg" alt="Bamboo Plant" />
+          <div class="product-details">
+            <h3 class="product-title">Bamboo Plant</h3>
+            <p class="product-price">Rs.165</p>
+            <p class="product-description">
+              Bamboo plants, often sold as "Lucky Bamboo," are resilient and
+              adaptable. They add a touch of elegance to indoor spaces and are
+              believed to bring good luck and positive energy.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 3 -->
+        <div class="product-card">
+          <img src="images/snakeplant.jpeg" alt="Snake Plant" />
+          <div class="product-details">
+            <h3 class="product-title">Snake Plant</h3>
+            <p class="product-price">Rs.90</p>
+            <p class="product-description">
+              Snake Plants are hardy, low-maintenance plants with tall, upright
+              leaves. They are great for improving indoor air quality and can
+              tolerate low light and irregular watering.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 4 -->
+        <div class="product-card">
+          <img src="images/spiderplant.jpeg" alt="Spider Plant" />
+          <div class="product-details">
+            <h3 class="product-title">Spider Plant</h3>
+            <p class="product-price">Rs.101</p>
+            <p class="product-description">
+              Spider Plants are easy to grow and known for their arching,
+              variegated leaves and small "babies" that grow on long stems. They
+              are great for purifying air and adding greenery to your home.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 5 -->
+        <div class="product-card">
+          <img src="images/jadeplant.jpeg" alt="Jade Plant" />
+          <div class="product-details">
+            <h3 class="product-title">Jade Plant</h3>
+            <p class="product-price">Rs.65</p>
+            <p class="product-description">
+              Jade Plants are succulents with thick, glossy leaves and a
+              tree-like appearance. They are considered symbols of good luck and
+              prosperity and are easy to care for.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 6 -->
+        <div class="product-card">
+          <img src="images/moneyplant.jpeg" alt="Money Plant" />
+          <div class="product-details">
+            <h3 class="product-title">Money Plant</h3>
+            <p class="product-price">Rs.135</p>
+            <p class="product-description">
+              Money Plants, or Pothos, are versatile and low-maintenance with
+              heart-shaped leaves. They are believed to bring good fortune and
+              are great for beginners.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 7 -->
+        <div class="product-card">
+          <img src="images/monstera.jpeg" alt="Monsetra" />
+          <div class="product-details">
+            <h3 class="product-title">Monstera</h3>
+            <p class="product-price">Rs.125</p>
+            <p class="product-description">
+              Monstera plants are admired for their large, glossy leaves with
+              distinctive splits and holes. They bring a tropical feel to indoor
+              spaces and are relatively easy to maintain.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+
+        <!-- Plant 8 -->
+        <div class="product-card">
+          <img src="images/peacelily.jpeg" alt="Peace Lily" />
+          <div class="product-details">
+            <h3 class="product-title">Peace Lily</h3>
+            <p class="product-price">Rs.98</p>
+            <p class="product-description">
+              Peace Lilies are one of the most popular houseplants. They are
+              easy to care for and feature beautiful white flowers.
+            </p>
+            <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+            <p class="thank-you">Thank you for your purchase!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function buyNow(button) {
+        // Hide the Buy Now button
+        button.style.display = "none";
+        // Show the thank you message
+        let thankYouMessage = button.nextElementSibling;
+        thankYouMessage.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
